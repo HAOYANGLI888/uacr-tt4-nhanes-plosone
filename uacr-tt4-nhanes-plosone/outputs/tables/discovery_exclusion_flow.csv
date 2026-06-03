@@ -1,0 +1,8 @@
+step,n_before,n_excluded,n_after,note
+Merged NHANES 2007-2012 records,30442,0,30442,Before analytic exclusions
+Age >= 18 years,30442,11823,18619,
+Exclude pregnant participants,18619,182,18437,
+Valid UACR > 0,18437,1101,17336,
+Nonmissing core thyroid indicators,17336,8526,8810,"Core indicators for discovery-validation comparability: TSH, TT4, TGAB, TPOAB"
+Exclude thyroid medication users,8810,531,8279,
+Nonmissing key covariates,8279,1792,6487,"AGE, SEX, RACE, EDUCATION, PIR, BMI, SMOKE, DRINK, DIABETES, HYPERTENSION, PHYSICAL_ACTIVITY, UIC_UG_L, EGFR, ANALYTIC_WT6YR, SDMVPSU, SDMVSTRA"

@@ -1,0 +1,7 @@
+"trait_key","status","selected_id","selected_trait","population","sample_size","author","year","unit","n_instruments","note"
+"UACR","selected","ieu-a-1107","Urinary albumin-to-creatinine ratio","European",54450,"Teumer",2015,"log mg/g",1,"Automatically selected European-priority candidate with the largest reported sample size among direct trait matches."
+"albuminuria","selected","ieu-a-1097","Microalbuminuria","European",54116,"Teumer",2015,"log odds",1,"Automatically selected European-priority candidate with the largest reported sample size among direct trait matches."
+"eGFR","selected","ebi-a-GCST90103634","Estimated glomerular filtration rate (creatinine)","European",1004040,"Stanzick KJ",2021,"",342,"Automatically selected European-priority candidate with the largest reported sample size among direct trait matches."
+"TSH","selected","prot-a-530","Thyroid Stimulating Hormone","European",3301,"Sun BB",2018,"NA",1,"Automatically selected European-priority candidate with the largest reported sample size among direct trait matches."
+"FT4","unavailable","","","",,"",,"",,"No direct OpenGWAS metadata match for pattern: (^FT4$|^Free T4$|free thyroxine)"
+"TT4","unavailable","","","",,"",,"",,"No direct OpenGWAS metadata match for pattern: (^TT4$|^Total T4$|total thyroxine)"
