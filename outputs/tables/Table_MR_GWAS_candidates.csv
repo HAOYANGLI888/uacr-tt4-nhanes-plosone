@@ -1,0 +1,10 @@
+"id","trait","build","category","subcategory","population","sex","author","year","ontology","unit","sample_size","consortium","trait_key","european_priority","sample_size_rank","selected"
+"ieu-a-1107","Urinary albumin-to-creatinine ratio","HG19/GRCh37","Risk factor","Kidney","European","Males and Females","Teumer",2015,"NA","log mg/g",54450,"CKDGen","UACR",1,54450,TRUE
+"ieu-a-1101","Urinary albumin-to-creatinine ratio","HG19/GRCh37","Risk factor","Kidney","European","Males and Females","Teumer",2015,"NA","log mg/g",46061,"CKDGen","UACR",1,46061,FALSE
+"ieu-a-1100","Urinary albumin-to-creatinine ratio","HG19/GRCh37","Risk factor","Kidney","European","Males and Females","Teumer",2015,"NA","log mg/g",5825,"CKDGen","UACR",1,5825,FALSE
+"ieu-a-1097","Microalbuminuria","HG19/GRCh37","Risk factor","Kidney","European","Males and Females","Teumer",2015,"NA","log odds",54116,"CKDGen","albuminuria",1,54116,TRUE
+"ebi-a-GCST90103634","Estimated glomerular filtration rate (creatinine)","HG19/GRCh37","NA","NA","European","NA","Stanzick KJ",2021,"","",1004040,"NA","eGFR",1,1004040,TRUE
+"ebi-a-GCST90026654","Estimated glomerular filtration rate (creatinine)","HG19/GRCh37","NA","NA","Mixed","NA","Yu Z",2021,"","",1159871,"NA","eGFR",0,1159871,FALSE
+"ebi-a-GCST90103633","Estimated glomerular filtration rate (creatinine)","HG19/GRCh37","NA","NA","East Asian","NA","Stanzick KJ",2021,"","",165726,"NA","eGFR",0,165726,FALSE
+"prot-a-530","Thyroid Stimulating Hormone","HG19/GRCh37","Immune system","Protein","European","Males and Females","Sun BB",2018,"NA","NA",3301,"NA","TSH",1,3301,TRUE
+"prot-c-3521_16_2","TSH","HG19/GRCh37","Continuous","NA","European","Males and Females","Suhre K",2019,"EFO_0007937","NA",,"NA","TSH",1,-Inf,FALSE

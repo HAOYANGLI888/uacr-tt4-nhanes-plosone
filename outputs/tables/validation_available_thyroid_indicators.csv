@@ -1,0 +1,5 @@
+indicator,nhanes3_source_variable,available,nonmissing_n
+TSH,THP,True,18148
+TT4,T4P,True,17795
+TGAB,TAP,True,18148
+TPOAB,TMP,True,18148

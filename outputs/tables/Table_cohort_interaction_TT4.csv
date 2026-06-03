@@ -1,0 +1,2 @@
+"outcome","exposure","model","n_model","interaction_term","interaction_beta","interaction_ci_low","interaction_ci_high","p_for_cohort_interaction","covariates_used","note"
+"TT4","LOG_UACR","H3 interaction",17687,"LOG_UACR:COHORTvalidation",-0.124078525030834,-0.202011206790594,-0.0461458432710745,0.00267708928655606,"AGE + SEX + RACE + EDUCATION + PIR + BMI + SMOKE + DRINK + DIABETES + HYPERTENSION + EGFR","Stacked discovery/validation survey design uses cohort-prefixed strata and PSU identifiers."

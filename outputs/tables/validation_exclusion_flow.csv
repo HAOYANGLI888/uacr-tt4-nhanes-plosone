@@ -1,0 +1,8 @@
+step,n_before,n_excluded,n_after,note
+Merged NHANES III records,33199,0,33199,Before validation exclusions
+Age >= 18 years,33199,13581,19618,
+Exclude pregnant participants,19618,353,19265,
+Exclude known thyroid disease or thyroid medication use,19265,931,18334,
+Valid UACR > 0,18334,2690,15644,
+Nonmissing TT4 validation outcome,15644,1210,14434,
+Nonmissing key covariates,14434,3132,11302,"AGE_YEARS, SEX, RACE_ETHNICITY, EDUCATION, PIR, BMI, SMOKING_STATUS, ALCOHOL_STATUS, DIABETES_STATUS, HYPERTENSION_STATUS, WTPFEX6, SDPPSU6, SDPSTRA6"

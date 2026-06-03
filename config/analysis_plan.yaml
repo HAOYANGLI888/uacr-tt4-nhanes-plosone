@@ -1,0 +1,70 @@
+project:
+  name: thyroid_uacr_routeB
+  question: "Association of UACR with thyroid hormone homeostasis and thyroid autoimmunity"
+  stage: skeleton
+
+paths:
+  raw: data/raw
+  interim: data/interim
+  processed: data/processed
+  external_gwas: data/external_gwas
+  tables: outputs/tables
+  figures: outputs/figures
+  logs: outputs/logs
+  reports: outputs/reports
+  manuscript: manuscript
+
+design:
+  discovery:
+    cohort: NHANES 2007-2012
+    primary_exposure: LOG_UACR
+    raw_exposure: UACR_MG_G
+    outcome_domains:
+      thyroid_hormone_homeostasis:
+        - TSH
+        - free T4
+        - total T4
+        - free T3
+        - total T3
+      thyroid_autoimmunity:
+        - thyroid peroxidase antibody
+        - thyroglobulin antibody
+    initial_model_scope: "survey-weighted descriptive analysis and clearly specified covariate blocks only"
+  validation:
+    cohort: NHANES III
+    purpose: "replication assessment with harmonized UACR, TSH, total T4, and thyroid antibody markers"
+    initial_model_scope: "harmonization checks and descriptive validation tables only"
+  causal_inference:
+    method: bidirectional_mendelian_randomization
+    direction_a: "genetically predicted thyroid traits -> UACR or kidney albuminuria traits"
+    direction_b: "genetically predicted UACR or kidney traits -> thyroid traits"
+    initial_model_scope: "GWAS template creation and harmonization checklist only"
+
+covariate_blocks:
+  minimal:
+    - age
+    - sex
+    - race_ethnicity
+  core:
+    - age
+    - sex
+    - race_ethnicity
+    - bmi
+    - poverty_income_ratio
+  extended_planned:
+    - blood_pressure
+    - diabetes_status
+    - smoking_status
+    - kidney_function
+
+outputs:
+  discovery_dataset: data/processed/discovery_nhanes_2007_2012.csv
+  validation_dataset: data/processed/validation_nhanes3_harmonized.csv
+  gwas_exposure_template: data/external_gwas/exposure_sumstats_template.csv
+  gwas_outcome_template: data/external_gwas/outcome_sumstats_template.csv
+
+reproducibility:
+  all_scripts_run_from_project_root: true
+  windows_compatible_paths: true
+  log_every_script: true
+  no_complex_models_in_skeleton: true

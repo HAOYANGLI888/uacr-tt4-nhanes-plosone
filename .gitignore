@@ -1,0 +1,56 @@
+# credentials
+.Renviron
+*.jwt
+*.token
+*token*
+*secret*
+.env
+
+# local cache
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.Rhistory
+.RData
+.Rproj.user/
+.ipynb_checkpoints/
+
+# large raw and individual-level data
+data/raw/
+data/interim/
+data/processed/
+data/external_gwas/
+*.XPT
+*.xpt
+*.dat
+*.sas
+*.part
+
+# local logs and generated caches
+outputs/logs/
+*.log
+
+# early skeleton/manifest outputs with local path diagnostics
+outputs/tables/03_validation_nhanes3_file_manifest.csv
+outputs/tables/04_discovery_survey_skeleton_summary.csv
+outputs/reports/02_build_discovery_dataset_report.md
+outputs/reports/03_prepare_validation_nhanes3_report.md
+outputs/reports/04_discovery_survey_skeleton_report.md
+outputs/reports/07_project_status.md
+
+# local/generated manuscript binaries
+manuscript/*.docx
+manuscript/*.xlsx
+
+# system and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+
+# archives
+*.zip
+*.tar
+*.tar.gz
+*.7z
