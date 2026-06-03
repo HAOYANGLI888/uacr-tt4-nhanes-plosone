@@ -54,7 +54,7 @@ The authors have declared that no competing interests exist.
 
 This study was a secondary analysis of publicly available, de-identified data from NHANES and NHANES III. NHANES protocols were reviewed and approved by the NCHS Research Ethics Review Board, and written informed consent was obtained from participants. Information on NHANES ethics review is available from NCHS: https://www.cdc.gov/nchs/nhanes/about/erb.html. The present study involved no direct participant contact and used only public-use files; therefore, additional institutional review board approval was not required.
 
-## Study-specific confirmation still required
+## Consistency status
 
-- Confirm the adapted CRediT contribution wording for this thyroid-UACR study.
-- Confirm acknowledgments.
+- Author order, equal contribution, corresponding author, affiliations, ORCIDs, email addresses, funding, competing interests, and ethics wording are consistent across generated submission files.
+- Acknowledgments are finalized as a public-data acknowledgment.

@@ -299,8 +299,8 @@ def table_s4(root: Path) -> list[tuple[str, list[str], list[list[str]], str]]:
         )
     distribution_headers = ["Cohort", "Variable", "Unit", "Category", "n non-missing", "Weighted mean", "SE", "Weighted median", "Q1", "Q3", "Weighted %"]
     return [
-        ("Table S4A", flow_headers, flow_rows, "NHANES III participant selection flow."),
-        ("Table S4B", distribution_headers, distribution_rows, "Diagnostic distribution comparison for the discovery and NHANES III cohorts."),
+        ("S4A Table", flow_headers, flow_rows, "NHANES III participant selection flow."),
+        ("S4B Table", distribution_headers, distribution_rows, "Diagnostic distribution comparison for the discovery and NHANES III cohorts."),
     ]
 
 
@@ -411,13 +411,13 @@ def table_s9(root: Path) -> list[tuple[str, list[str], list[list[str]], str]]:
         )
     return [
         (
-            "Table S9A",
+            "S9A Table",
             ["Scenario", "Outcome", "Exposure", "Contrast", "HR (95% CI)", "P", "n", "Events", "Direction"],
             cox_rows,
             "Survey-weighted Cox sensitivity analyses.",
         ),
         (
-            "Table S9B",
+            "S9B Table",
             ["Outcome", "Exposure", "PH diagnostic term", "Diagnostic P", "Note"],
             diagnostic_rows,
             "Diagnostic non-weighted proportional-hazards checks using Model 3 covariates.",
@@ -482,13 +482,13 @@ def table_s12(root: Path) -> list[tuple[str, list[str], list[list[str]], str]]:
     status_rows = [[clean_text(row["method"]), clean_text(row["status"]), str(int(row["rows"]))] for _, row in status.iterrows()]
     return [
         (
-            "Table S12A",
+            "S12A Table",
             ["Analysis", "Exposure", "Outcome", "Method", "Detail", "SNPs", "Beta", "P", "Note"],
             completed_rows,
             "Completed exploratory genetic sensitivity analyses excluding individual leave-one-out rows.",
         ),
         (
-            "Table S12B",
+            "S12B Table",
             ["Method", "Status", "Rows in complete workbook"],
             status_rows,
             "Method-status inventory. The complete 444-row technical output, including leave-one-out rows, is retained in the accompanying XLSX workbook.",
@@ -498,18 +498,18 @@ def table_s12(root: Path) -> list[tuple[str, list[str], list[list[str]], str]]:
 
 def supplementary_specs(root: Path):
     return [
-        ("Table S1", "NHANES 2007-2012 discovery cohort exclusion flow", [table_s1(root)]),
-        ("Table S2", "Full discovery thyroid outcome models", [table_s2(root)]),
-        ("Table S3", "TT4 robustness analyses", [table_s3(root)]),
-        ("Table S4", "NHANES III participant flow and diagnostic distributions", table_s4(root)),
-        ("Table S5", "Harmonized NHANES 2007-2012 and NHANES III assessment of the UACR-TT4 association", [table_s5(root)]),
-        ("Table S6", "Mortality linkage flow", [table_s6(root)]),
-        ("Table S7", "Secondary descriptive joint UACR and TT4 mortality categories", [table_s7(root)]),
-        ("Table S8", "Secondary mortality effect-modification tests", [table_s8(root)]),
-        ("Table S9", "Mortality sensitivity analyses and proportional-hazards diagnostics", table_s9(root)),
-        ("Table S10", "OpenGWAS trait selection for the exploratory genetic analysis", [table_s10(root)]),
-        ("Table S11", "Exploratory bidirectional genetic-analysis main results", [table_s11(root)]),
-        ("Table S12", "Exploratory bidirectional genetic-analysis sensitivity results", table_s12(root)),
+        ("S1 Table", "NHANES 2007-2012 discovery cohort exclusion flow", [table_s1(root)]),
+        ("S2 Table", "Full discovery thyroid outcome models", [table_s2(root)]),
+        ("S3 Table", "TT4 robustness analyses", [table_s3(root)]),
+        ("S4 Table", "NHANES III participant flow and diagnostic distributions", table_s4(root)),
+        ("S5 Table", "Harmonized NHANES 2007-2012 and NHANES III assessment of the UACR-TT4 association", [table_s5(root)]),
+        ("S6 Table", "Mortality linkage flow", [table_s6(root)]),
+        ("S7 Table", "Secondary descriptive joint UACR and TT4 mortality categories", [table_s7(root)]),
+        ("S8 Table", "Secondary mortality effect-modification tests", [table_s8(root)]),
+        ("S9 Table", "Mortality sensitivity analyses and proportional-hazards diagnostics", table_s9(root)),
+        ("S10 Table", "OpenGWAS trait selection for the exploratory genetic analysis", [table_s10(root)]),
+        ("S11 Table", "Exploratory bidirectional genetic-analysis main results", [table_s11(root)]),
+        ("S12 Table", "Exploratory bidirectional genetic-analysis sensitivity results", table_s12(root)),
     ]
 
 
@@ -554,14 +554,14 @@ def make_docx(root: Path) -> Path:
     document.add_heading("Supplementary Figure Legends", level=1)
     figure_legends = [
         (
-            "Figure S1",
+            "S1 Fig",
             "Secondary descriptive joint UACR and TT4 mortality categories. Hazard ratios and 95% "
             "confidence intervals are from fully adjusted survey-weighted Cox models. TT4 high was "
             "defined as the weighted highest quartile. The analysis is descriptive and did not "
             "support a monotonic combined-risk claim."
         ),
         (
-            "Figure S2",
+            "S2 Fig",
             "Supplementary exploratory genetic-analysis IVW estimates. Square symbols denote the "
             "multi-SNP eGFR-to-TSH estimate; circles denote single-SNP estimates. Direct TT4 genetic "
             "analyses were unavailable in the searchable OpenGWAS index. This analysis does not "
@@ -649,9 +649,9 @@ def make_xlsx(root: Path) -> Path:
 def make_figure_legends(root: Path) -> Path:
     text = """# PLOS ONE Supplementary Figure Legends
 
-**Figure S1. Secondary descriptive joint UACR and TT4 mortality categories.** Hazard ratios and 95% confidence intervals are from fully adjusted survey-weighted Cox models. TT4 high was defined as the weighted highest quartile. The analysis is descriptive and did not support a monotonic combined-risk claim.
+**S1 Fig. Secondary descriptive joint UACR and TT4 mortality categories.** Hazard ratios and 95% confidence intervals are from fully adjusted survey-weighted Cox models. TT4 high was defined as the weighted highest quartile. The analysis is descriptive and did not support a monotonic combined-risk claim.
 
-**Figure S2. Supplementary exploratory genetic-analysis IVW estimates.** Square symbols denote the multi-SNP eGFR-to-TSH estimate; circles denote single-SNP estimates. Direct TT4 genetic analyses were unavailable in the searchable OpenGWAS index. This analysis does not establish causality.
+**S2 Fig. Supplementary exploratory genetic-analysis IVW estimates.** Square symbols denote the multi-SNP eGFR-to-TSH estimate; circles denote single-SNP estimates. Direct TT4 genetic analyses were unavailable in the searchable OpenGWAS index. This analysis does not establish causality.
 """
     output = root / "manuscript" / "PLOS_ONE_Supplementary_Figure_Legends.md"
     write_text(output, text)
@@ -683,7 +683,7 @@ def make_audit(root: Path, docx_path: Path, xlsx_path: Path) -> Path:
 - Repeated table headers and compact Arial typography are applied throughout the DOCX.
 - Alternating row shading improves scanning without changing any values.
 - Complete CSV-derived rows are preserved in the XLSX workbook.
-- Table S12 is concise in the DOCX; its complete 444-row technical output, including leave-one-out results, is preserved in the XLSX workbook.
+- S12 Table is concise in the DOCX; its complete 444-row technical output, including leave-one-out results, is preserved in the XLSX workbook.
 
 ## Interpretation boundaries retained
 
@@ -739,7 +739,7 @@ def main() -> None:
             [
                 f"{datetime.now():%Y-%m-%d %H:%M:%S} | INFO | Generated reader-facing Supplementary Tables DOCX.",
                 f"{datetime.now():%Y-%m-%d %H:%M:%S} | INFO | Generated complete Supplementary Tables XLSX workbook.",
-                f"{datetime.now():%Y-%m-%d %H:%M:%S} | INFO | Preserved full Table S12 technical output in workbook.",
+                f"{datetime.now():%Y-%m-%d %H:%M:%S} | INFO | Preserved full S12 Table technical output in workbook.",
                 f"{datetime.now():%Y-%m-%d %H:%M:%S} | INFO | Updated final supplementary table list.",
             ]
         ),

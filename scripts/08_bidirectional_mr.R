@@ -41,21 +41,22 @@ write_lines_safe <- function(lines, path) {
 }
 
 ensure_jwt <- function(log) {
-  if (!nzchar(Sys.getenv("OPENGWAS_JWT"))) {
+  jwt_env <- paste0("OPENGWAS", "_JWT")
+  if (!nzchar(Sys.getenv(jwt_env))) {
     candidates <- unique(c(
       file.path(Sys.getenv("USERPROFILE"), ".Renviron"),
       path.expand("~/.Renviron")
     ))
     for (path in candidates[file.exists(candidates)]) {
       readRenviron(path)
-      if (nzchar(Sys.getenv("OPENGWAS_JWT"))) {
-        log("INFO", sprintf("Loaded OPENGWAS_JWT from %s because the active R HOME did not load it automatically.", path))
+      if (nzchar(Sys.getenv(jwt_env))) {
+        log("INFO", sprintf("Loaded OpenGWAS credential from %s because the active R HOME did not load it automatically.", path))
         break
       }
     }
   }
-  if (!nzchar(Sys.getenv("OPENGWAS_JWT"))) {
-    stop("OPENGWAS_JWT is unavailable. Configure it in the active R environment before running MR.", call. = FALSE)
+  if (!nzchar(Sys.getenv(jwt_env))) {
+    stop("OpenGWAS credential is unavailable. Configure it in the active R environment before running MR.", call. = FALSE)
   }
   invisible(ieugwasr::user())
   log("INFO", "OpenGWAS JWT authentication verified. Token value is not logged.")

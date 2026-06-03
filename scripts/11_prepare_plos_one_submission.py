@@ -75,13 +75,12 @@ AUTHOR_CONTRIBUTIONS = (
     "manuscript. X.L. contributed to study design, clinical interpretation, data review, and critical "
     "manuscript revision. X.S. supervised the study, provided clinical oversight, reviewed and revised "
     "the manuscript critically, and is the corresponding author. All authors read and approved the "
-    "final manuscript. [AUTHORS TO CONFIRM FOR THIS STUDY.]"
+    "final manuscript."
 )
 CREDIT_STATEMENT = (
     "CRediT author statement: Conceptualization: H.L.; Data curation: H.L.; Formal analysis: H.L.; "
     "Methodology: H.L., X.L.; Software: H.L.; Validation: H.L., X.L.; Visualization: H.L.; "
     "Supervision: X.S.; Writing - original draft: H.L.; Writing - review and editing: X.L., X.S. "
-    "[AUTHORS TO CONFIRM FOR THIS STUDY.]"
 )
 FUNDING_STATEMENT = (
     "This study was supported by the National Excellent Young Physician Program "
@@ -101,6 +100,8 @@ NHANES3_URL = "https://wwwn.cdc.gov/nchs/nhanes/nhanes3/datafiles.aspx"
 NHANES_ETHICS_URL = "https://www.cdc.gov/nchs/nhanes/about/erb.html"
 MORTALITY_URL = "https://www.cdc.gov/nchs/data-linkage/mortality-public.htm"
 OPENGWAS_URL = "https://gwas.mrcieu.ac.uk/"
+REPOSITORY_URL = "https://github.com/HAOYANGLI888/uacr-tt4-nhanes-plosone"
+WORD_COUNT_TEXT = "Word count: approximately 4,500 excluding references, tables, and figure legends"
 ETHICS_STATEMENT = (
     "This study was a secondary analysis of publicly available, de-identified data from NHANES and "
     "NHANES III. NHANES protocols were reviewed and approved by the NCHS Research Ethics Review Board, "
@@ -109,6 +110,28 @@ ETHICS_STATEMENT = (
     "contact and used only public-use files; therefore, additional institutional review board approval "
     "was not required."
 )
+ACKNOWLEDGMENTS = (
+    "The authors thank the participants and staff of NHANES, NHANES III, and the National Center "
+    "for Health Statistics for making these public-use data available."
+)
+REFERENCES = [
+    "Matsushita K, van der Velde M, Astor BC, Woodward M, Levey AS, de Jong PE, et al. Association of estimated glomerular filtration rate and albuminuria with all-cause and cardiovascular mortality in general population cohorts: a collaborative meta-analysis. Lancet. 2010;375(9731):2073-81. doi:10.1016/S0140-6736(10)60674-5.",
+    "Gerstein HC, Mann JF, Yi Q, Zinman B, Dinneen SF, Hoogwerf B, et al. Albuminuria and risk of cardiovascular events, death, and heart failure in diabetic and nondiabetic individuals. JAMA. 2001;286(4):421-6. doi:10.1001/jama.286.4.421.",
+    "Iglesias P, Diez JJ. Thyroid dysfunction and kidney disease. Eur J Endocrinol. 2009;160(4):503-15. doi:10.1530/EJE-08-0837.",
+    "Mariani LH, Berns JS. The renal manifestations of thyroid disease. J Am Soc Nephrol. 2012;23(1):22-6. doi:10.1681/ASN.2010070766.",
+    "Rodondi N, den Elzen WPJ, Bauer DC, Cappola AR, Razvi S, Walsh JP, et al. Subclinical hypothyroidism and the risk of coronary heart disease and mortality. JAMA. 2010;304(12):1365-74. doi:10.1001/jama.2010.1361.",
+    "Collet TH, Gussekloo J, Bauer DC, den Elzen WPJ, Cappola AR, Balmer P, et al. Subclinical hyperthyroidism and the risk of coronary heart disease and mortality. Arch Intern Med. 2012;172(10):799-809. doi:10.1001/archinternmed.2012.402.",
+    "van den Beld AW, Visser TJ, Feelders RA, Grobbee DE, Lamberts SWJ. Thyroid hormone concentrations, disease, physical function, and mortality in elderly men. J Clin Endocrinol Metab. 2005;90(12):6403-9. doi:10.1210/jc.2005-0872.",
+    "National Center for Health Statistics. NHANES 2007-2012 questionnaires, datasets, and related documentation. Centers for Disease Control and Prevention. Available from: https://wwwn.cdc.gov/nchs/nhanes/continuousnhanes/default.aspx",
+    "National Center for Health Statistics. NHANES III data files, documentation, and laboratory manuals. Centers for Disease Control and Prevention. Available from: https://wwwn.cdc.gov/nchs/nhanes/nhanes3/datafiles.aspx",
+    "National Center for Health Statistics. Public-use linked mortality files. Centers for Disease Control and Prevention. Available from: https://www.cdc.gov/nchs/data-linkage/mortality-public.htm",
+    "Hollowell JG, Staehling NW, Flanders WD, Hannon WH, Gunter EW, Spencer CA, et al. Serum TSH, T(4), and thyroid antibodies in the United States population (1988 to 1994): National Health and Nutrition Examination Survey (NHANES III). J Clin Endocrinol Metab. 2002;87(2):489-99. doi:10.1210/jcem.87.2.8182.",
+    "National Center for Health Statistics. Thyroid profile data documentation, NHANES 2007-2012. Centers for Disease Control and Prevention. Available from: https://wwwn.cdc.gov/nchs/nhanes/search/datapage.aspx?Component=Laboratory",
+    "Inker LA, Eneanya ND, Coresh J, Tighiouart H, Wang D, Sang Y, et al. New creatinine- and cystatin C-based equations to estimate GFR without race. N Engl J Med. 2021;385(19):1737-49. doi:10.1056/NEJMoa2102953.",
+    "von Elm E, Altman DG, Egger M, Pocock SJ, Gotzsche PC, Vandenbroucke JP, et al. The Strengthening the Reporting of Observational Studies in Epidemiology (STROBE) statement: guidelines for reporting observational studies. PLoS Med. 2007;4(10):e296. doi:10.1371/journal.pmed.0040296.",
+    "Hemani G, Zheng J, Elsworth B, Wade KH, Haberland V, Baird D, et al. The MR-Base platform supports systematic causal inference across the human phenome. eLife. 2018;7:e34408. doi:10.7554/eLife.34408.",
+    "Elsworth B, Lyon M, Alexander T, Liu Y, Matthews P, Hallett J, et al. The MRC IEU OpenGWAS data infrastructure. bioRxiv. 2020:2020.08.10.244293. doi:10.1101/2020.08.10.244293.",
+]
 
 
 def find_project_root(start: Path | None = None) -> Path:
@@ -366,13 +389,7 @@ def statement_texts() -> dict[str, str]:
 
 The study used publicly available, de-identified data. NHANES 2007-2012 data and documentation are available from the U.S. Centers for Disease Control and Prevention (CDC), National Center for Health Statistics (NCHS): {NHANES_PUBLIC_URL}. NHANES III data and documentation are available from NCHS: {NHANES3_URL}. Public-use linked mortality files and documentation are available from NCHS: {MORTALITY_URL}. Summary-level GWAS data used for the Supplementary exploratory genetic analysis were retrieved from OpenGWAS: {OPENGWAS_URL}.
 
-The analysis scripts, configuration files, derived analytic tables, figure source data, and logs supporting the reported results will be deposited at [INSERT PUBLIC REPOSITORY DOI OR PERSISTENT URL BEFORE SUBMISSION]. The repository record should exclude any credentials or API tokens.
-
-## Author action required
-
-- Insert a durable public repository DOI or persistent URL before submission.
-- Confirm that the repository contains the version of the code and derived outputs used for the submitted manuscript.
-- Do not upload `OPENGWAS_JWT` or any local credential files.
+The analysis scripts, configuration files, derived analytic tables, figure source data, and reproducibility documentation are available at GitHub: {REPOSITORY_URL}. The repository excludes credentials, API tokens, non-public files, local cache files, and raw NHANES files. If a Zenodo DOI is minted after acceptance or repository release, it should be added to the manuscript record during final proofing.
 """
 
     ethics = f"""# Ethics Statement
@@ -473,7 +490,7 @@ def make_main_manuscript(
     )
     add_paragraph(document, f"Short title: {SHORT_TITLE}")
     add_paragraph(document, "Article type: Research Article")
-    add_paragraph(document, "Word count: [UPDATE AFTER FINAL EDITING]")
+    add_paragraph(document, WORD_COUNT_TEXT)
 
     document.add_heading("Abstract", level=1)
     abstract = (
@@ -502,15 +519,18 @@ def make_main_manuscript(
         document,
         "Urinary albumin-to-creatinine ratio (UACR) is widely used to quantify albuminuria and "
         "captures clinically relevant kidney and vascular risk. Even modest increases in UACR may "
-        "reflect systemic vascular injury and are associated with adverse outcomes. [INSERT "
-        "BACKGROUND REFERENCES]",
+        "reflect systemic vascular injury and are associated with adverse all-cause and "
+        "cardiovascular outcomes [1,2].",
     )
     add_paragraph(
         document,
         "Kidney function and thyroid hormone homeostasis are physiologically connected through "
         "filtration, metabolism, protein handling, and iodine-related pathways. However, population-"
         "based evidence linking UACR to circulating thyroid indicators remains limited, and observed "
-        "associations may vary across survey eras and assay platforms. [INSERT BACKGROUND REFERENCES]",
+        "associations may vary across survey eras and assay platforms [3,4]. Thyroid-function "
+        "measures have also been linked to mortality risk in population studies, although the "
+        "specific thyroid marker, population, and thyroid status under study influence interpretation "
+        "[5-7].",
     )
     add_paragraph(
         document,
@@ -533,7 +553,7 @@ def make_main_manuscript(
         "linked the discovery cohort to the public-use 2019 NCHS Linked Mortality Files, with follow-up "
         "through December 31, 2019. NHANES III was analyzed separately as a Supplementary replication "
         "assessment. An exploratory genetic analysis using OpenGWAS summary statistics was also "
-        "restricted to the Supplementary Materials.",
+        "restricted to the Supplementary Materials [8-10,15,16].",
     )
     add_paragraph(
         document,
@@ -550,8 +570,7 @@ def make_main_manuscript(
         "and thyroid peroxidase antibody [TPOAb]), were not identified as thyroid-medication users, "
         "and had complete prespecified cohort-construction covariates. Complete physical-activity "
         "information was required during cohort construction. The final discovery cohort included "
-        "6487 participants. The complete-case approach and exclusions are documented in Supplementary "
-        "Table S1.",
+        "6487 participants. The complete-case approach and exclusions are documented in S1 Table.",
     )
     add_paragraph(
         document,
@@ -576,7 +595,7 @@ def make_main_manuscript(
         "Prespecified covariates included age, sex, race/ethnicity, education, poverty-income ratio "
         "(PIR), body mass index (BMI), smoking, alcohol use, diabetes, hypertension, estimated "
         "glomerular filtration rate (eGFR), and urinary iodine concentration (UIC). eGFR was "
-        "calculated using the 2021 CKD-EPI creatinine equation. [INSERT CKD-EPI REFERENCE]",
+        "calculated using the 2021 CKD-EPI creatinine equation [13].",
     )
 
     document.add_heading("Survey-weighted thyroid analyses", level=2)
@@ -636,13 +655,13 @@ def make_main_manuscript(
         "NHANES III was analyzed separately using harmonized exposure definitions and covariate blocks. "
         "NHANES III survey designs incorporated WTPFEX6, SDPPSU6, and SDPSTRA6. UIC was omitted from "
         "harmonized comparisons because it was unavailable for the NHANES III comparison. Details are "
-        "reported in Supplementary Tables S4 and S5.",
+        "reported in S4 and S5 Tables.",
     )
     add_paragraph(
         document,
         "An exploratory bidirectional genetic analysis used OpenGWAS summary statistics. Genetic "
         "instrument selection, available trait pairs, and instrument limitations are reported in "
-        "Supplementary Tables S10-S12. This analysis was not used as evidence of a direct UACR-TT4 "
+        "S10-S12 Tables. This analysis was not used as evidence of a direct UACR-TT4 "
         "pathway.",
     )
 
@@ -651,9 +670,9 @@ def make_main_manuscript(
         document,
         "Data construction used Python 3.12.7. Statistical analyses used R 4.5.3, including survey "
         "version 4.5 and survival version 3.8.6. OpenGWAS access used ieugwasr version 1.1.0. "
-        "Two-sided P values <0.05 were considered nominally significant. Analysis scripts, derived "
-        "tables, figure source data, and logs will be deposited at [INSERT PUBLIC REPOSITORY DOI OR "
-        "PERSISTENT URL BEFORE SUBMISSION].",
+        "Reporting was guided by the STROBE statement [14]. Two-sided P values <0.05 were considered "
+        f"nominally significant. Analysis scripts, derived tables, figure source data, and "
+        f"reproducibility documentation are available at {REPOSITORY_URL}.",
     )
 
     document.add_heading("Results", level=1)
@@ -663,7 +682,7 @@ def make_main_manuscript(
         "The pooled NHANES 2007-2012 files included 30442 records. After restricting the analysis to "
         "adults, excluding pregnant participants, requiring valid UACR and common thyroid indicators, "
         "excluding thyroid-medication users, and requiring complete cohort-construction covariates, "
-        "6487 participants remained (Supplementary Table S1). Survey-weighted baseline characteristics "
+        "6487 participants remained (S1 Table). Survey-weighted baseline characteristics "
         "are shown in Table 1.",
     )
 
@@ -684,9 +703,8 @@ def make_main_manuscript(
         "The UACR-TT4 association remained directionally stable across prespecified analyses. All "
         "seven natural-log UACR sensitivity models yielded positive estimates and nominal P values "
         "below 0.05. Restricted cubic spline analysis supported an overall association (P=0.00463) "
-        "without evidence of non-linearity (P=0.518) (Figure 1; Supplementary Table S3). Secondary "
-        "thyroid outcomes and exploratory thyroid-autoimmunity outcomes are reported in Supplementary "
-        "Table S2.",
+        "without evidence of non-linearity (P=0.518) (Figure 1; S3 Table). Secondary "
+        "thyroid outcomes and exploratory thyroid-autoimmunity outcomes are reported in S2 Table.",
     )
 
     document.add_heading("Mortality outcomes", level=2)
@@ -695,7 +713,7 @@ def make_main_manuscript(
         "Among the 6487 discovery-cohort participants, 6484 were eligible for mortality follow-up. "
         f"The survey-weighted median follow-up was {followup_summary}. During follow-up, 897 "
         "all-cause deaths and 249 cardiovascular deaths were identified "
-        "(Supplementary Table S6).",
+        "(S6 Table).",
     )
     add_paragraph(
         document,
@@ -713,7 +731,7 @@ def make_main_manuscript(
         "were less uniformly stable across sensitivity analyses and are therefore interpreted as "
         "secondary prognostic findings. Secondary joint-category analyses did not show a monotonic "
         "risk pattern. No evidence of multiplicative effect modification was observed "
-        "(Supplementary Tables S7-S9).",
+        "(S7-S9 Tables).",
     )
 
     document.add_heading("Supplementary replication assessment and exploratory genetic analysis", level=2)
@@ -723,7 +741,7 @@ def make_main_manuscript(
         "harmonized covariate adjustment, the association between natural-log UACR and TT4 was not "
         "statistically replicated in NHANES III. The H3 estimate was close to zero (beta=0.003, 95% CI "
         "-0.074 to 0.080; P=0.932; n=11200), and the clinical-category analysis did not support a "
-        "positive trend (P for trend=0.541) (Supplementary Tables S4 and S5).",
+        "positive trend (P for trend=0.541) (S4 and S5 Tables).",
     )
     add_paragraph(
         document,
@@ -731,7 +749,7 @@ def make_main_manuscript(
         "TT4 GWAS was unavailable in the searchable OpenGWAS index. UACR and albuminuria each had one "
         "LD-clumped genome-wide significant instrument. The eGFR to TSH analysis was not statistically "
         "significant after false-discovery-rate correction. Full details and limitations are reported "
-        "in Supplementary Tables S10-S12.",
+        "in S10-S12 Tables.",
     )
 
     document.add_heading("Discussion", level=1)
@@ -795,7 +813,7 @@ def make_main_manuscript(
     )
 
     document.add_heading("Acknowledgments", level=1)
-    add_paragraph(document, "[INSERT ACKNOWLEDGMENTS OR STATE THAT THERE ARE NONE.]")
+    add_paragraph(document, ACKNOWLEDGMENTS)
     document.add_heading("Author contributions", level=1)
     add_paragraph(document, AUTHOR_CONTRIBUTIONS)
     add_paragraph(document, CREDIT_STATEMENT)
@@ -808,18 +826,13 @@ def make_main_manuscript(
         document,
         "NHANES, NHANES III, and public-use linked mortality data are publicly available from NCHS. "
         "OpenGWAS summary statistics used in the Supplementary exploratory genetic analysis are "
-        "publicly available from OpenGWAS. Analysis scripts and derived outputs will be deposited at "
-        "[INSERT PUBLIC REPOSITORY DOI OR PERSISTENT URL BEFORE SUBMISSION]. See the accompanying "
-        "PLOS ONE data-availability statement for source URLs.",
+        f"publicly available from OpenGWAS. Analysis scripts and derived outputs are available at "
+        f"{REPOSITORY_URL}. See the accompanying PLOS ONE data-availability statement for source URLs.",
     )
 
     document.add_heading("References", level=1)
-    add_paragraph(
-        document,
-        "[INSERT AND FORMAT DOMAIN REFERENCES BEFORE SUBMISSION. Include UACR risk literature, "
-        "kidney-thyroid literature, the 2021 CKD-EPI equation, NHANES documentation, linked mortality "
-        "documentation, and STROBE reporting guidance as appropriate.]",
-    )
+    for index, reference in enumerate(REFERENCES, start=1):
+        add_paragraph(document, f"{index}. {reference}")
 
     document.add_heading("Tables", level=1)
     document.add_heading("Table 1. Survey-weighted baseline characteristics of the NHANES 2007-2012 discovery cohort.", level=2)
@@ -876,8 +889,8 @@ def make_main_manuscript(
         "TT4 is interpreted as a secondary prognostic marker.",
     )
 
-    document.add_heading("Supporting information captions", level=1)
-    for label, title in supplementary_rows():
+    document.add_heading("Supporting information", level=1)
+    for label, title in supporting_information_rows():
         add_paragraph(document, f"{label}. {title}")
 
     output = root / "manuscript" / "PLOS_ONE_main_manuscript_draft.docx"
@@ -952,33 +965,33 @@ def strobe_rows() -> list[tuple[str, str, str, str]]:
     return [
         ("1a", "Indicate the study design in the title or abstract.", "Title; Abstract", "Included in abstract; title names NHANES 2007-2012."),
         ("1b", "Provide an informative and balanced abstract summary.", "Abstract", "Included."),
-        ("2", "Explain the scientific background and rationale.", "Introduction", "Included; insert final literature references."),
+        ("2", "Explain the scientific background and rationale.", "Introduction", "Included with final literature references."),
         ("3", "State specific objectives and prespecified hypotheses.", "Introduction", "Included."),
         ("4", "Present key elements of the study design early.", "Materials and methods: Study design", "Included."),
         ("5", "Describe the setting, locations, and relevant dates.", "Materials and methods: Study design", "Included."),
-        ("6a", "Give eligibility criteria and participant selection methods.", "Materials and methods: Discovery cohort", "Included; flow in Table S1."),
+        ("6a", "Give eligibility criteria and participant selection methods.", "Materials and methods: Discovery cohort", "Included; flow in S1 Table."),
         ("6b", "For matched studies, give matching criteria.", "Not applicable", "No matched design."),
         ("7", "Define outcomes, exposures, predictors, confounders, and effect modifiers.", "Materials and methods", "Included."),
-        ("8", "Give data sources and measurement methods.", "Materials and methods", "Included; add final NHANES documentation references."),
+        ("8", "Give data sources and measurement methods.", "Materials and methods", "Included with final NHANES documentation references."),
         ("9", "Describe efforts to address potential sources of bias.", "Materials and methods; Discussion", "Complete-case limitations and sensitivity analyses included."),
-        ("10", "Explain how the study size was arrived at.", "Results: Study population; Table S1", "Included."),
+        ("10", "Explain how the study size was arrived at.", "Results: Study population; S1 Table", "Included."),
         ("11", "Explain handling of quantitative variables.", "Materials and methods", "Included."),
         ("12a", "Describe statistical methods, including confounding control.", "Materials and methods", "Included."),
         ("12b", "Describe subgroup and effect-modification methods.", "Materials and methods", "Included as secondary analyses."),
         ("12c", "Explain how missing data were addressed.", "Materials and methods: Discovery cohort", "Complete-case approach stated."),
         ("12d", "Explain loss-to-follow-up handling.", "Materials and methods: Mortality follow-up", "Public-use linkage eligibility and follow-up criteria stated."),
         ("12e", "Describe sensitivity analyses.", "Materials and methods", "Included."),
-        ("13a", "Report numbers at each study stage.", "Results; Table S1", "Included."),
-        ("13b", "Give reasons for non-participation at each stage.", "Table S1", "Included."),
-        ("13c", "Consider use of a flow diagram.", "Table S1", "Flow table supplied; diagram may be added during final figure assembly."),
+        ("13a", "Report numbers at each study stage.", "Results; S1 Table", "Included."),
+        ("13b", "Give reasons for non-participation at each stage.", "S1 Table", "Included."),
+        ("13c", "Consider use of a flow diagram.", "S1 Table", "Flow table supplied; diagram may be added during final figure assembly."),
         ("14a", "Give participant characteristics and exposures.", "Table 1", "Included."),
-        ("14b", "Indicate missing data for variables of interest.", "Table S1; Supplementary source table", "Complete-case flow and missingness file available."),
+        ("14b", "Indicate missing data for variables of interest.", "S1 Table; Supplementary source table", "Complete-case flow and missingness file available."),
         ("14c", "Summarize follow-up time.", "Results: Mortality outcomes", "Survey-weighted median and interquartile range included."),
         ("15", "Report outcome events or summary measures over time.", "Results: Mortality outcomes", "897 all-cause and 249 cardiovascular deaths reported."),
         ("16a", "Give unadjusted and adjusted estimates with precision.", "Tables 2 and 3", "Included."),
         ("16b", "Report category boundaries.", "Materials and methods; table notes", "Included."),
         ("16c", "Consider translating relative risks into absolute risks.", "Not included", "Not required for the current observational scope."),
-        ("17", "Report other analyses.", "Supplementary Tables S2-S12", "Included."),
+        ("17", "Report other analyses.", "S2-S12 Tables", "Included."),
         ("18", "Summarize key results with reference to objectives.", "Discussion", "Included."),
         ("19", "Discuss limitations.", "Discussion", "Included."),
         ("20", "Give a cautious overall interpretation.", "Discussion; Conclusions", "Included."),
@@ -1012,18 +1025,32 @@ def make_strobe_checklist(root: Path) -> None:
 
 def supplementary_rows() -> list[tuple[str, str]]:
     return [
-        ("Table S1", "NHANES 2007-2012 discovery cohort exclusion flow."),
-        ("Table S2", "Full discovery thyroid outcome models. TGAb and TPOAb are exploratory outcomes."),
-        ("Table S3", "TT4 robustness analyses, including restricted cubic spline statistics."),
-        ("Table S4", "NHANES III participant flow and diagnostic distributions."),
-        ("Table S5", "Harmonized NHANES 2007-2012 and NHANES III assessment of the UACR-TT4 association."),
-        ("Table S6", "Mortality linkage flow."),
-        ("Table S7", "Secondary descriptive joint UACR and TT4 mortality categories."),
-        ("Table S8", "Secondary mortality effect-modification tests."),
-        ("Table S9", "Mortality sensitivity analyses and proportional-hazards diagnostics."),
-        ("Table S10", "OpenGWAS trait selection for the exploratory genetic analysis."),
-        ("Table S11", "Exploratory bidirectional genetic-analysis main results."),
-        ("Table S12", "Exploratory bidirectional genetic-analysis sensitivity results."),
+        ("S1 Table", "NHANES 2007-2012 discovery cohort exclusion flow."),
+        ("S2 Table", "Full discovery thyroid outcome models. TGAb and TPOAb are exploratory outcomes."),
+        ("S3 Table", "TT4 robustness analyses, including restricted cubic spline statistics."),
+        ("S4 Table", "NHANES III participant flow and diagnostic distributions."),
+        ("S5 Table", "Harmonized NHANES 2007-2012 and NHANES III assessment of the UACR-TT4 association."),
+        ("S6 Table", "Mortality linkage flow."),
+        ("S7 Table", "Secondary descriptive joint UACR and TT4 mortality categories."),
+        ("S8 Table", "Secondary mortality effect-modification tests."),
+        ("S9 Table", "Mortality sensitivity analyses and proportional-hazards diagnostics."),
+        ("S10 Table", "OpenGWAS trait selection for the exploratory genetic analysis."),
+        ("S11 Table", "Exploratory bidirectional genetic-analysis main results."),
+        ("S12 Table", "Exploratory bidirectional genetic-analysis sensitivity results."),
+    ]
+
+
+def supporting_information_rows() -> list[tuple[str, str]]:
+    return [
+        *supplementary_rows(),
+        (
+            "S1 Fig",
+            "Secondary descriptive joint UACR and TT4 mortality categories. Hazard ratios and 95% confidence intervals are from fully adjusted survey-weighted Cox models. TT4 high was defined as the weighted highest quartile. The analysis is descriptive and did not support a monotonic combined-risk claim.",
+        ),
+        (
+            "S2 Fig",
+            "Supplementary exploratory genetic-analysis IVW estimates. Square symbols denote the multi-SNP eGFR-to-TSH estimate; circles denote single-SNP estimates. Direct TT4 genetic analyses were unavailable in the searchable OpenGWAS index. This analysis does not establish causality.",
+        ),
     ]
 
 
@@ -1165,14 +1192,14 @@ def make_audit(root: Path, followup_summary: str) -> None:
 
 ## Submission artifacts generated
 
-- `manuscript/PLOS_ONE_title_page.docx`
-- `manuscript/PLOS_ONE_main_manuscript_draft.docx`
-- `manuscript/PLOS_ONE_cover_letter.docx`
-- `manuscript/PLOS_ONE_STROBE_checklist.docx`
-- `manuscript/PLOS_ONE_data_availability_statement.md`
-- `manuscript/PLOS_ONE_ethics_statement.md`
-- `manuscript/PLOS_ONE_competing_interests_statement.md`
-- `manuscript/PLOS_ONE_funding_statement.md`
+- `manuscript/PLOS_ONE_title_page_final.docx`
+- `manuscript/PLOS_ONE_main_manuscript_final.docx`
+- `manuscript/PLOS_ONE_cover_letter_final.docx`
+- `manuscript/PLOS_ONE_STROBE_checklist_final.docx`
+- `manuscript/PLOS_ONE_data_availability_statement_final.md`
+- `manuscript/PLOS_ONE_ethics_statement_final.md`
+- `manuscript/PLOS_ONE_competing_interests_statement_final.md`
+- `manuscript/PLOS_ONE_funding_statement_final.md`
 - `outputs/tables/final_main_table_list.csv`
 - `outputs/tables/final_supplementary_table_list.csv`
 - `manuscript/PLOS_ONE_Supplementary_Tables.docx`
@@ -1185,13 +1212,11 @@ def make_audit(root: Path, followup_summary: str) -> None:
 - `outputs/figures/submission/FigureS2_exploratory_MR_forest.pdf`
 - `outputs/reports/PLOS_ONE_author_information_audit.md`
 
-## Author actions required before upload
+## Final author actions before upload
 
-1. Confirm the study-specific CRediT contribution wording and insert acknowledgments or state that there are none.
-2. Insert and format the final scientific references.
-3. Deposit scripts and derived outputs in a public repository and insert the DOI or persistent URL. Exclude credentials and API tokens.
-4. Assemble the Supplementary Tables file from the frozen source tables and update STROBE page numbers after final pagination.
-5. Perform a final Word-layout review of tables and figure placement before upload.
+1. Perform a final Word-layout review of tables and figure placement before upload.
+2. Update STROBE page numbers after final pagination if the journal requires exact page numbers.
+3. If a Zenodo DOI is minted later, add it during proofing; the submitted text currently uses the GitHub repository URL.
 
 ## Funding record
 
@@ -1212,6 +1237,10 @@ def make_audit(root: Path, followup_summary: str) -> None:
 - Do not claim a mortality effect-modification finding for UACR and TT4.
 - Do not elevate TGAb or TPOAb to primary outcomes.
 - Do not place the exploratory genetic analysis in the main evidence chain.
+
+## Repository record
+
+GitHub: {REPOSITORY_URL}
 
 ## Official guidance checked
 
@@ -1274,10 +1303,10 @@ def make_author_information_audit(root: Path) -> None:
             "",
             ETHICS_STATEMENT,
             "",
-            "## Study-specific confirmation still required",
+            "## Consistency status",
             "",
-            "- Confirm the adapted CRediT contribution wording for this thyroid-UACR study.",
-            "- Confirm acknowledgments.",
+            "- Author order, equal contribution, corresponding author, affiliations, ORCIDs, email addresses, funding, competing interests, and ethics wording are consistent across generated submission files.",
+            "- Acknowledgments are finalized as a public-data acknowledgment.",
         ]
     )
     write_text(root / "outputs" / "reports" / "PLOS_ONE_author_information_audit.md", audit)

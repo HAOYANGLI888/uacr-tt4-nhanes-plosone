@@ -52,14 +52,14 @@ Urinary albumin-to-creatinine ratio, total thyroxine, and mortality risk among U
 
 ## Submission artifacts generated
 
-- `manuscript/PLOS_ONE_title_page.docx`
-- `manuscript/PLOS_ONE_main_manuscript_draft.docx`
-- `manuscript/PLOS_ONE_cover_letter.docx`
-- `manuscript/PLOS_ONE_STROBE_checklist.docx`
-- `manuscript/PLOS_ONE_data_availability_statement.md`
-- `manuscript/PLOS_ONE_ethics_statement.md`
-- `manuscript/PLOS_ONE_competing_interests_statement.md`
-- `manuscript/PLOS_ONE_funding_statement.md`
+- `manuscript/PLOS_ONE_title_page_final.docx`
+- `manuscript/PLOS_ONE_main_manuscript_final.docx`
+- `manuscript/PLOS_ONE_cover_letter_final.docx`
+- `manuscript/PLOS_ONE_STROBE_checklist_final.docx`
+- `manuscript/PLOS_ONE_data_availability_statement_final.md`
+- `manuscript/PLOS_ONE_ethics_statement_final.md`
+- `manuscript/PLOS_ONE_competing_interests_statement_final.md`
+- `manuscript/PLOS_ONE_funding_statement_final.md`
 - `outputs/tables/final_main_table_list.csv`
 - `outputs/tables/final_supplementary_table_list.csv`
 - `manuscript/PLOS_ONE_Supplementary_Tables.docx`
@@ -72,13 +72,11 @@ Urinary albumin-to-creatinine ratio, total thyroxine, and mortality risk among U
 - `outputs/figures/submission/FigureS2_exploratory_MR_forest.pdf`
 - `outputs/reports/PLOS_ONE_author_information_audit.md`
 
-## Author actions required before upload
+## Final author actions before upload
 
-1. Confirm the study-specific CRediT contribution wording and insert acknowledgments or state that there are none.
-2. Insert and format the final scientific references.
-3. Deposit scripts and derived outputs in a public repository and insert the DOI or persistent URL. Exclude credentials and API tokens.
-4. Assemble the Supplementary Tables file from the frozen source tables and update STROBE page numbers after final pagination.
-5. Perform a final Word-layout review of tables and figure placement before upload.
+1. Perform a final Word-layout review of tables and figure placement before upload.
+2. Update STROBE page numbers after final pagination if the journal requires exact page numbers.
+3. If a Zenodo DOI is minted later, add it during proofing; the submitted text currently uses the GitHub repository URL.
 
 ## Funding record
 
@@ -99,6 +97,10 @@ This study was a secondary analysis of publicly available, de-identified data fr
 - Do not claim a mortality effect-modification finding for UACR and TT4.
 - Do not elevate TGAb or TPOAb to primary outcomes.
 - Do not place the exploratory genetic analysis in the main evidence chain.
+
+## Repository record
+
+GitHub: https://github.com/HAOYANGLI888/uacr-tt4-nhanes-plosone
 
 ## Official guidance checked
 

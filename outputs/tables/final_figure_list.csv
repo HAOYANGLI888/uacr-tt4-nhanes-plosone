@@ -1,5 +1,5 @@
-"label","placement","title","source_data","submission_pdf","role"
-"Figure 1","Main manuscript","Restricted cubic spline association between UACR and TT4","outputs/tables/Figure1_RCS_TT4_source_data.csv","outputs/figures/submission/Figure1_RCS_TT4.pdf","Primary thyroid association shape"
-"Figure 2","Main manuscript","Mortality sensitivity analyses for natural-log UACR and TT4","outputs/tables/Figure2_mortality_forest_source_data.csv","outputs/figures/submission/Figure2_mortality_forest.pdf","Primary and secondary mortality robustness"
-"Figure S1","Supplementary Materials","Secondary descriptive joint UACR and TT4 mortality categories","outputs/tables/FigureS1_joint_mortality_source_data.csv","outputs/figures/submission/FigureS1_joint_mortality.pdf","Secondary descriptive analysis only"
-"Figure S2","Supplementary Materials","Supplementary exploratory genetic-analysis IVW estimates","outputs/tables/FigureS2_MR_forest_source_data.csv","outputs/figures/submission/FigureS2_exploratory_MR_forest.pdf","Supplementary exploratory genetic analysis only"
+﻿label,placement,title,source_data,submission_pdf,role
+Figure 1,Main manuscript,Restricted cubic spline association between UACR and TT4,outputs/tables/Figure1_RCS_TT4_source_data.csv,outputs/figures/submission/Figure1_RCS_TT4.pdf,Primary thyroid association shape
+Figure 2,Main manuscript,Mortality sensitivity analyses for natural-log UACR and TT4,outputs/tables/Figure2_mortality_forest_source_data.csv,outputs/figures/submission/Figure2_mortality_forest.pdf,Primary and secondary mortality robustness
+S1 Fig,Supplementary Materials,Secondary descriptive joint UACR and TT4 mortality categories,outputs/tables/FigureS1_joint_mortality_source_data.csv,outputs/figures/submission/FigureS1_joint_mortality.pdf,Secondary descriptive analysis only
+S2 Fig,Supplementary Materials,Supplementary exploratory genetic-analysis IVW estimates,outputs/tables/FigureS2_MR_forest_source_data.csv,outputs/figures/submission/FigureS2_exploratory_MR_forest.pdf,Supplementary exploratory genetic analysis only

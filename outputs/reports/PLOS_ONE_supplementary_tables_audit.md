@@ -13,7 +13,7 @@
 - Repeated table headers and compact Arial typography are applied throughout the DOCX.
 - Alternating row shading improves scanning without changing any values.
 - Complete CSV-derived rows are preserved in the XLSX workbook.
-- Table S12 is concise in the DOCX; its complete 444-row technical output, including leave-one-out results, is preserved in the XLSX workbook.
+- S12 Table is concise in the DOCX; its complete 444-row technical output, including leave-one-out results, is preserved in the XLSX workbook.
 
 ## Interpretation boundaries retained
 

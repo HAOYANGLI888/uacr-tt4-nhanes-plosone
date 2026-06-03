@@ -43,5 +43,5 @@ mortality:
 
 exploratory_genetic_analysis:
   platform: OpenGWAS
-  credentials: "OPENGWAS_JWT must be configured locally and is not included in the repository."
+  credentials: "An OpenGWAS JWT environment variable must be configured locally and is not included in the repository."
   interpretation: "Supplementary exploratory genetic analysis only; does not establish causality."

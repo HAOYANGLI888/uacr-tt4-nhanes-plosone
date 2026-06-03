@@ -1,41 +1,43 @@
 # Urinary albumin-to-creatinine ratio, total thyroxine, and mortality risk among U.S. adults
 
-This repository contains the reproducible analysis code and derived aggregate result tables for the manuscript submitted to PLOS ONE:
+This repository contains the reproducible analysis code and derived aggregate result tables for the PLOS ONE manuscript:
 
 **Urinary albumin-to-creatinine ratio, total thyroxine, and mortality risk among U.S. adults: evidence from NHANES 2007-2012**
 
-The main analysis evaluates the association between urinary albumin-to-creatinine ratio (UACR) and total thyroxine (TT4) in NHANES 2007-2012, with mortality follow-up through the NCHS public-use linked mortality file. NHANES III is used as a supplementary replication assessment and was not statistically replicated. The bidirectional Mendelian randomization module is exploratory and supplementary only.
+The main analysis evaluates the association between urinary albumin-to-creatinine ratio (UACR) and total thyroxine (TT4) in NHANES 2007-2012, with mortality follow-up through the NCHS public-use linked mortality file. NHANES III is reported as a supplementary assessment and was not statistically replicated. The bidirectional Mendelian randomization module is an exploratory genetic analysis and is supplementary only.
+
+Repository URL: https://github.com/HAOYANGLI888/uacr-tt4-nhanes-plosone
 
 ## Repository Contents
 
 ```text
 uacr-tt4-nhanes-plosone/
-├─ README.md
-├─ LICENSE
-├─ .gitignore
-├─ requirements.txt
-├─ environment.yml
-├─ config/
-│  ├─ variables.yaml
-│  ├─ variables_discovery.yaml
-│  ├─ variables_validation_nhanes3.yaml
-│  └─ analysis_plan.yaml
-├─ scripts/
-│  ├─ 01_build_discovery_nhanes_2007_2012.py
-│  ├─ 02_build_validation_nhanes3.py
-│  ├─ 03_discovery_validation_regression.R
-│  ├─ 05_TT4_robustness.R
-│  ├─ 07_mortality_analysis.R
-│  ├─ 08_bidirectional_mr.R
-│  └─ 09_mortality_extension.R
-├─ outputs/
-│  ├─ tables/
-│  ├─ figures/
-│  └─ reports/
-└─ manuscript/
-   ├─ data_availability_statement.md
-   ├─ strobe_checklist_mapping.md
-   └─ supplementary_table_list.md
+|-- README.md
+|-- LICENSE
+|-- .gitignore
+|-- requirements.txt
+|-- environment.yml
+|-- config/
+|   |-- variables.yaml
+|   |-- variables_discovery.yaml
+|   |-- variables_validation_nhanes3.yaml
+|   `-- analysis_plan.yaml
+|-- scripts/
+|   |-- 01_build_discovery_nhanes_2007_2012.py
+|   |-- 02_build_validation_nhanes3.py
+|   |-- 03_discovery_validation_regression.R
+|   |-- 05_TT4_robustness.R
+|   |-- 07_mortality_analysis.R
+|   |-- 08_bidirectional_mr.R
+|   `-- 09_mortality_extension.R
+|-- outputs/
+|   |-- tables/
+|   |-- figures/
+|   `-- reports/
+`-- manuscript/
+    |-- data_availability_statement.md
+    |-- strobe_checklist_mapping.md
+    `-- supplementary_table_list.md
 ```
 
 ## Data Sources
@@ -104,7 +106,7 @@ Rscript scripts/09_mortality_extension.R
 Rscript scripts/08_bidirectional_mr.R
 ```
 
-The exploratory MR script requires a locally configured OpenGWAS JWT. No token or credential is included in this repository.
+The exploratory MR script requires a locally configured OpenGWAS JWT environment variable. No credential value is included in this repository.
 
 ## Main Outputs
 
@@ -124,7 +126,7 @@ Key aggregate outputs include:
 
 Do not commit:
 
-- `OPENGWAS_JWT`
+- OpenGWAS credential values
 - `.Renviron`
 - API tokens or secrets
 - local absolute-path cache files
