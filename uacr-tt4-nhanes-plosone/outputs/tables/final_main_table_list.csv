@@ -1,4 +1,0 @@
-﻿order,proposed_label,placement,title,source_file,status,submission_action
-1,Table 1,Main manuscript,Survey-weighted baseline characteristics of the NHANES 2007-2012 discovery cohort,outputs/tables/Table1_discovery_baseline_characteristics.csv,generated,Retain descriptive statistics only; no between-group hypothesis tests.
-2,Table 2,Main manuscript,Association of UACR with TT4 in NHANES 2007-2012,outputs/tables/Table2_discovery_main_results.csv,embedded_in_draft,Retain TT4 rows for natural-log UACR and clinical categories.
-3,Table 3,Main manuscript,Associations of natural-log UACR and TT4 with all-cause and cardiovascular mortality,outputs/tables/Table_mortality_main.csv,embedded_in_draft,Retain Model 1 and fully adjusted rows for natural-log UACR and TT4.

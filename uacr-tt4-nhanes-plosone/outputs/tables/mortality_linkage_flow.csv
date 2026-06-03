@@ -1,7 +1,0 @@
-step,n,note
-Discovery analytic cohort,6487,
-Matched to public-use LMF,6487,SEQN linkage
-Eligible for mortality follow-up,6484,ELIGSTAT == 1
-Eligible with follow-up months from MEC examination,6484,PERMTH_EXM nonmissing
-All-cause deaths,897,MORTSTAT == 1
-Cardiovascular deaths,249,"UCOD_LEADING in {1 heart disease, 5 cerebrovascular disease}"

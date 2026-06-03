@@ -1,8 +1,0 @@
-"metric","value","note"
-"discovery_analytic_n",6487,"NHANES 2007-2012 discovery cohort"
-"mortality_eligible_n",6484,"ELIGSTAT == 1 and PERMTH_EXM > 0"
-"all_cause_deaths",897,"MORTSTAT == 1"
-"cardiovascular_deaths",249,"UCOD_LEADING heart disease or cerebrovascular disease categories"
-"followup_years_weighted_median",9.83333333333333,"Survey-weighted median"
-"followup_years_weighted_q1",8.08333333333333,"Survey-weighted first quartile"
-"followup_years_weighted_q3",11.25,"Survey-weighted third quartile"
